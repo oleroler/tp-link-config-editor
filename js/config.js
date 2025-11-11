@@ -321,9 +321,7 @@ const ensureEqualConfigs = (a, b) => {
 }
 
 const ensureValidSize = (file) => {
-  if (file.size % paddingLength) {
-    throw new Error(`Invalid config size. Must be multiple of ${paddingLength}. ${file.size}`)
-  }
+  
 }
 
 export const encodeConfig = async (config) => {
